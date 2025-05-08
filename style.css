@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+@media (max-width: 768px)
 header {
   position: relative;
   text-align: center;
