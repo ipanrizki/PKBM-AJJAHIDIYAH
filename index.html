@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PKBM Ajjahidiyah</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body onload="updateDateTime()">
+  <header>
+    <div class="datetime" id="datetime"></div> <!-- 🕒 Ini akan muncul di pojok kanan atas -->
+
+    <div class="header-center">
+      <img src="images/logo.png" alt="Logo PKBM" class="logo" />
+      <h1>PKBM Ajjahidiyah</h1>
+      <p>“Mencerdaskan Kehidupan Bangsa”</p>
+    </div>
+  </header>
+
+
+<nav class="nav-utama">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="container">
+    <!-- Slider Gambar -->
+    <section class="slider">
+      <img src="images/foto1.jpg" alt="Foto Unggulan" class="slide" />
+      <img src="images/foto2.jpg" alt="Foto Unggulan" class="slide hidden" />
+      <img src="images/foto3.jpg" alt="Foto Unggulan" class="slide hidden" />
+    </section>
+
+<nav class="nav-download">
+    <ul>
+      <li><a href="SKLWEB/skl.html">Unduh Surat Keterangan Lulus Program Kesetaraan Paket C</a></li>
+    </ul>
+  </nav>
+
+
+
+    <!-- Sambutan & Kalender -->
+    <section class="sambutan-kalender">
+      <div class="sambutan">
+        <img src="images/kepala.jpg" alt="Kepala PKBM" class="foto-kepala" />
+        <div>
+          <h2>Sambutan Kepala PKBM</h2>
+          <p>
+           Selamat datang di website resmi PKBM Ajjahidiyah. Kami hadir sebagai lembaga pendidikan nonformal yang berkomitmen untuk menyediakan kesempatan belajar yang inklusif dan fleksibel bagi siapa saja yang ingin berkembang.</p>
+
+</p>Pendidikan bukan hanya sekedar belajar di kelas, tetapi juga sebuah perjalanan untuk meningkatkan kualitas diri, keterampilan, dan kemampuan hidup yang lebih baik. Kami berharap website ini bisa menjadi sarana informasi yang bermanfaat untuk semua pihak.
+
+Terima kasih atas dukungan dan kepercayaan Anda. Mari bersama-sama memajukan pendidikan sebagai jalan menuju masa depan yang lebih cerah.
+            <br><br><strong>IPAN RIZKI ADI, S.Pd.</strong>
+<br><br><strong>Kepala PKBM Ajjahidiyah</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="kalender-pendidikan">
+        <h2>Kalender Pendidikan</h2>
+        <img src="images/kalender.jpg" alt="Kalender Pendidikan" class="kalender" />
+      </div>
+    </section>
+
+   
+
+<div class="info-utama">
+  <div class="berita-terbaru">
+    <h2>Berita Terbaru</h2>
+      <ul class="berita">
+      <li><strong>05 Mei 2025:</strong> Penetapan SK Kelulusan Program Paket C.</li>
+        <li><strong>02 Juni 2025:</strong> Penetapan SK Kelulusan Program Paket B.</li>
+        <li><strong>10 Juni 2025:</strong> Terakhir Mengumpulkan Foto Ijazah (Untuk foto di cuci).</li>
+    </ul>
+  </div>
+
+  <div class="pengumuman">
+    <h3>Pengumuman</h3>
+    <img src="gambar-pengumuman.jpg" alt="Pengumuman" class="gambar-pengumuman">
+  </div>
+</div>
+ 
+
+<footer>
+  <p>&copy; 2025 PKBM Ajjahidiyah. Semua hak dilindungi.</p>
+</footer>
+</body>
+</html>
+
+<script>
+  function updateDateTime() {
+    const now = new Date();
+
+    const hari = now.toLocaleDateString('id-ID', { weekday: 'long' });
+    const tanggal = now.getDate();
+    const bulan = now.toLocaleDateString('id-ID', { month: 'long' });
+    const tahun = now.getFullYear();
+
+    let jam = now.getHours();
+    let menit = now.getMinutes();
+    if (menit < 10) menit = "0" + menit;
+
+    const hasil = `${hari}, ${tanggal} ${bulan} ${tahun} - ${jam}:${menit} WIB`;
+    document.getElementById("datetime").textContent = hasil;
+
+    setTimeout(updateDateTime, 1000);
+  }
+</script>
+</body>

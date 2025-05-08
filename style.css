@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f0f0f0;
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 80%;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+#datetime {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+body {
+  background: #f2f5f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #23bfc2;
+  color: white;
+}
+
+.logo {
+  width: 80px;
+}
+
+#datetime {
+  margin-top: 10px;
+  font-size: 0.9em;
+  background-color: #f4f4f4; /* abu muda */
+  padding: 10px;
+  border-top: 2px solid #ccc;
+}
+
+
+.nav-utama {
+  background-color: #008006; /* biru gelap */
+  padding: 10px;
+  margin-top: 0px;
+  border-top: 2px solid #ccc;
+}
+
+.nav-utama ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-utama a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+/* Nav khusus halaman download */
+.nav-download {
+  background-color: #f01414; /* abu muda */
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+}
+
+.nav-download ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.nav-download a {
+  text-decoration: none;
+  text-align: center;    /* teks di tengah */
+  color: #ffffff;
+}
+
+
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 1s;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sambutan-kalender {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+}
+
+.sambutan {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-kepala {
+    width: 300px;
+  height: 250px; /* atur sesuai keinginan */
+  object-fit: cover; /* atau 'contain' kalau mau seluruh gambar terlihat */
+  border-radius: 10px;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.2);
+}
+
+.kalender-pendidikan {
+  flex: 1;
+  text-align: center;
+}
+
+.kalender {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+.berita {
+  list-style: disc;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.info-utama {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.berita-terbaru, .pengumuman {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gambar-pengumuman {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.paketc {
+width: 300px;
+  height: 250px; /* atur sesuai keinginan */
+  object-fit: cover; /* atau 'contain' kalau mau seluruh gambar terlihat */
+  border-radius: 10px;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.2);
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #3f51b5;
+  color: white;
+  margin-top: 40px;
+}
+
+

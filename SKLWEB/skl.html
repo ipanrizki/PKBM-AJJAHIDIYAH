@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Siswa</title>
+  <script src="script.js" defer></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      width: 60px;
+    }
+
+    .logo-left {
+      left: 10px;
+    }
+
+    .logo-right {
+      right: 10px;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #36cf3c;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 400px) {
+      .logo {
+        width: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo kiri dan kanan -->
+  <img src="logo-kiri.png" alt="Logo Kiri" class="logo logo-left" />
+  <img src="logo-kanan.png" alt="Logo Kanan" class="logo logo-right" />
+
+  <div class="login-box">
+ <h1>PKBM AJJAHIDIYAH</h1>   
+ <h2>Surat Kelulusan Paket C</h2>
+ <h2>TP. 24-25</h2>
+    <input type="text" id="nama" placeholder="Nama Lengkap" />
+    <input type="text" id="nisn" placeholder="NISN" />
+    <button onclick="login()">Masuk</button>
+  </div>
+</body>
+</html>
+<body style="background-color:#f2f5f9;" onload="updateDateTime()">
+
